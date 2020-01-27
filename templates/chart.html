@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revenue</title>
+
+    <link rel="stylesheet" type="text/css" href='static/css/bootstrap.css'/>
+
+
+</head>
+
+<body style="color: #b1dfbb">
+
+
+
+
+        <br /><br /><br />
+
+    <div class="container col-4">
+
+        <p style="color: #456788; text-align: center; font-size: 1.8rem;">Select parameters:</p>
+
+        <div class="row">
+
+                <ul class="nav nav-pills col" id="pills-tab" role="tablist" value="" >
+
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#" role="tab" aria-controls="pills-home" aria-selected="false"
+                       onclick="document.getElementById('pills-tab').value = 'product'; setFlag1_1(); buttononclick(); gochart(); return false">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#" role="tab" aria-controls="pills-profile" aria-selected="false"
+                       onclick="document.getElementById('pills-tab').value = 'country'; setFlag1_2(); buttononclick(); gochart(); return false">Country</a>
+                  </li>
+                </ul>
+
+
+
+
+                <ul class="nav nav-pills col-auto" id="pills-tab2" role="tablist" value="">
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-home-tab2" data-toggle="pill" href="#" role="tab" aria-controls="pills-profile" aria-selected="false"
+                        onclick="document.getElementById('pills-tab2').value = 'amount'; setFlag2_1(); buttononclick(); gochart(); return false">Amount</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab3" data-toggle="pill" href="#" role="tab" aria-controls="pills-profile" aria-selected="false"
+                       onclick="document.getElementById('pills-tab2').value = 'price'; setFlag2_2(); buttononclick(); gochart(); return false">Price</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-home-tab4" data-toggle="pill" href="#" role="tab" aria-controls="pills-home" aria-selected="false"
+                        onclick="document.getElementById('pills-tab2').value = 'revenue'; setFlag2_3(); buttononclick(); gochart(); return false">Revenue</a>
+                  </li>
+
+
+                </ul>
+
+        </div>
+    </div>
+
+
+        <div class="container my col-3">
+
+          <hr class="my-4">
+
+
+          <div>
+
+              <form id = "chart1">
+
+              </form>
+
+          </div>
+
+        </div>
+
+
+    <!-- import plugin script -->
+    <script src='static/js/Chart.min.js'></script>
+    <!-- import Jquery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- import popper script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src='static/js/bootstrap.js'></script>
+    <script src='static/js/Pie_chart.js'></script>
+
+
+</body>
+</html>
